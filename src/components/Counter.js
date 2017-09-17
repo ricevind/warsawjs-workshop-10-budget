@@ -22,10 +22,13 @@ export default class Counter extends Component {
 
     counterView = () => {
         const style = {
-            color: this.state.counter >= 10 ? 'red' : 'black'
+            color: this.state.counter >= 10 ? 'red' : 'black',
+            fontSize: this.state.counter >= 10 ? '16px' : '10px'
         }
         return (
+            <div style={{height: '50px', padding:'5px'}}>
             <h1 style={style}>Hello from react {this.state.counter}</h1>
+            </div>
         )
     }
 

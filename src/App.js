@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Counter from './Counter'
-
+import {Counter, TransactionCard}  from './components'
 class App extends Component {
   render() {
     return (
@@ -13,6 +12,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <Counter />
+        <TransactionCard />
       </div>
     );
   }
